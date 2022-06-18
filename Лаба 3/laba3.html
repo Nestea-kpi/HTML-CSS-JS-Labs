@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Форма</title>
+      <style type="text/css">
+input::placeholder{
+  color:green;
+}
+      </style>
+   </head>
+   <body>
+<table border="3" width="60%" height="200">
+<th colspan="2">Pizza Shop 2.0</th>
+<tr>
+  <td>Name</td>
+  <td><input type="text" placeholder="Введіть ім'я"</td>
+</tr>
+<tr>
+<td>Pizza toping</td>
+<td><form><input type="radio" value="s" name="pizza">Supreme</input>
+  <br><input type="radio" value="v" name="pizza">Vegetarian</br></input>
+<input type="radio" value="w" name="pizza">Hawaiian</input>
+<form>
+</td>
+</tr>
+<tr>
+<td>Pizza Sauce</td>
+<td><form>
+<select name="Sauce" id="sauce-select"></input>
+<option value="Tomato">Tomato</option>
+</form>
+</td>
+</tr>
+<tr>
+<td>Optional Extras</td>
+<td>
+  <form>
+<input type="checkbox" value="ec" name="extra">Extra Cheese</input>
+<input type="checkbox" value="geb" name="extra">Gluten Extra Base</input>
+  </form>
+</td>
+</tr>
+<tr>
+<td colspan="2"><form>
+<label for="instructions">Delivery Instructions: </label>
+<textarea id="instructions" name="instructions" rows="8"cols="85" placeholder="Введіть свої побажання щодо замовлення..."></textarea>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<button>Send my order</button>
+</td>
+</tr>
+</table>
+   </body>
+</html>
